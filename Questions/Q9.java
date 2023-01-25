@@ -22,10 +22,11 @@ public class Swapping2Numbers{
     a=a*b;     /* ****Values of a and b can not be zero in this logic****   --> It will give Exception if any of the value is zero*/
     b=a/b;
     a=a/b;
-
     
+    /* Swapping logic ends here */
+    
+    /* Use any one of the abpve logic at a time */
+    /*  Point to FOCUS -->  In Logic 2 and 3 ... first one of the variable is made to store a bigger value than the current values of both the variables*/
     System.out.println("After swapping a=" + a + "and b=" + b); // String Concatenation is used here
   }
 }
-
-
