@@ -30,3 +30,17 @@ class Test
         The result 200 will be treated as the string and concatenated with the string Java to produce the output as Java200. */
     }  
 }  
+
+/* Q4 --> */
+class Test   
+{  
+    public static void main (String args[])   
+    {  
+        for(int i=0; 0; i++)   
+        {  
+            System.out.println("Hello Javatpoint");  
+        }  
+    }  
+}  
+/*output = error 
+--->  because the for loop demands a boolean value in the second part ; and we are providing an integer value, i.e., 0. */
