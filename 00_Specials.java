@@ -17,4 +17,16 @@ class Test
     }  
 } 
 
-/* Q3 -->*/
+/* Q3 --> */
+class Test   
+{  
+    public static void main (String args[])   
+    {  
+        System.out.println(10 * 20 + "Java"); //200Java  
+        /* The numbers 10 and 20 will be multiplied first and then the result 200 is treated as string and concatenated with string Java to produce the output 200Java. */
+        
+        System.out.println("Java" + 10 * 20); //Java200
+        /* The numbers 10 and 20 will be multiplied first to be 200 because the precedence of the multiplication is higher than addition. 
+        The result 200 will be treated as the string and concatenated with the string Java to produce the output as Java200. */
+    }  
+}  
