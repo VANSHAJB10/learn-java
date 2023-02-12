@@ -1,3 +1,8 @@
+/*Java Environment: The programming environment of Java consists of three components 
+ -->JDK
+ -->JRE
+ -->JVM
+ */
 public class javabasics{
     public static void main(string args[]){
         System.out.print("Hi!");                   //print function , ';' is called statement terminator
