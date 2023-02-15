@@ -1,10 +1,10 @@
 /*
      * 1.how to achieve that no-one can create obj of class ?
-     * by making constructor private
+     * by making the constructor private
      * 
-     * 2. able to creaqte only 1 obj
-     * by creating hte object in the class itself
+     * 2.how to make it possible for to user to be able to create only 1 obj
+     * by creating the object in the class itself.
      * 
-     * 3.application of siglrton class.
+     * 3.application of sigleton class.
      * banking applications
 */
