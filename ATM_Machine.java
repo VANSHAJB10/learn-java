@@ -14,7 +14,9 @@ class ATM{
         }
         else{
             System.out.println("Pin Invalid");
+            checkpin();
         }
+        sc.close();
 
     }
     
@@ -44,6 +46,7 @@ class ATM{
         else{
             System.out.println("Enter a valid option.");
         }
+        sc.close();
     }
 
     public void checkBalance(){
@@ -65,6 +68,7 @@ class ATM{
             System.out.println("Please collect your cash.");
         }
     menu();
+    sc.close();
     }
 
     public void depositmoney(){
@@ -85,9 +89,15 @@ class ATM{
         else{
             menu();
         }
+        sc.close();
     }
 }
 
 public class ATM_Machine {
-    
+
+     public static void main(String args[]){
+
+        ATM myobj = new ATM();  //creating object of ATM class
+        myobj.checkBalance(); // Calling checkpin() method
+    }
 }
