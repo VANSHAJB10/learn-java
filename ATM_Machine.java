@@ -24,7 +24,28 @@ class ATM{
         System.out.println("Withdraw Money");
         System.out.println("Deposit Money");
         System.out.println("Exit");
+        
+        Scanner sc= new Scanner(System.in);// needs to be written again beacuse a new method is created // You cannot write the next line directly without writing this line of code
+        int option =sc.nextInt();
+
+        if(option == 1){
+            checkBalance();
+        }
+        else if(option == 2){
+            withdrawmoney();
+        }
+        else if(option == 3){
+            depositmoney();
+        }
+        else if(option == 4){
+            break; //Program will be terminated // no need of declaring exit method separately. 
+        }
+        else{
+            System.out.println("Enter a valid option.");
+        }
+        
     }
+    
 }
 
 
