@@ -20,10 +20,10 @@ class ATM{
     
     public void menu(){
         System.out.println("Choose the option: ");
-        System.out.println("Check Current Balance ");
-        System.out.println("Withdraw Money");
-        System.out.println("Deposit Money");
-        System.out.println("Exit");
+        System.out.println("1. Check Current Balance ");
+        System.out.println("2. Withdraw Money");
+        System.out.println("3. Deposit Money");
+        System.out.println("4. Exit");
         
         Scanner sc= new Scanner(System.in);// needs to be written again beacuse a new method is created // You cannot write the next line directly without writing this line of code
         int option =sc.nextInt();
