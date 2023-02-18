@@ -17,6 +17,14 @@ class ATM{
         }
 
     }
+    
+    public void menu(){
+        System.out.println("Choose the option: ");
+        System.out.println("Check Current Balance ");
+        System.out.println("Withdraw Money");
+        System.out.println("Deposit Money");
+        System.out.println("Exit");
+    }
 }
 
 
