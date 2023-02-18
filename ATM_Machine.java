@@ -38,16 +38,55 @@ class ATM{
             depositmoney();
         }
         else if(option == 4){
-            break; //Program will be terminated // no need of declaring exit method separately. 
+            return; //Program will be terminated // no need of declaring exit method separately. 
+            // *****FOCUS! *****  We cannot use 'break' here   **** 'return' must be used , as 'break' cannot be used outside a loop or switch .
         }
         else{
             System.out.println("Enter a valid option.");
         }
-        
     }
-    
-}
 
+    public void checkBalance(){
+        System.out.println("Balance is: "+ Balance);
+        menu();
+    }
+
+    public void  withdrawmoney(){
+        System.out.println("Enter Amount to withdraw");
+
+        Scanner sc= new Scanner(System.in);
+        float amount = sc.nextFloat();
+
+        if(amount> Balance){
+            System.out.println("Funds Insufficient. Request Declined!");
+        }
+        else{
+            Balance = Balance-amount;
+            System.out.println("Please collect your cash.");
+        }
+    menu();
+    }
+
+    public void depositmoney(){
+        System.out.println("Enterthe amount to be deposited");
+
+        Scanner sc= new Scanner(System.in);
+        float deposit = sc.nextFloat();
+
+        Balance = Balance + deposit;
+        System.out.println("Money deposited SUCCESSFULLY.");
+
+        System.out.println("Do you want to check the current balance?");
+        System.out.println("Press 1 for YES  and 2 for NO");
+        int choice= sc.nextInt();
+        if(choice == 1){
+            checkBalance();
+        }
+        else{
+            menu();
+        }
+    }
+}
 
 public class ATM_Machine {
     
