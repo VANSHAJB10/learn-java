@@ -38,5 +38,12 @@ class Porche extends Car{
 
 public class Inheritance {
     Car c = new Car();
-
 }
+
+/*
+  Method overriding - 
+  Its redefining the parent class method inside child class.
+  Overridding alwys take place in case of inheritance.
+
+  The whole header should match - name , return type , parameter initialisation
+ */
