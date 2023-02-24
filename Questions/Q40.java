@@ -16,8 +16,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 public class solution_Day_29_2{    
     private static final DecimalFormat df = new DecimalFormat("0.00");
-public static void main(String[] args) {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    public static void main(String[] args) {
     double am1,am2;
     Scanner sc = new Scanner(System.in);
     double bill =  sc .nextDouble();
