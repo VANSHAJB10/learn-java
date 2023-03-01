@@ -11,8 +11,11 @@ public class Strings_prog{
     String name = sc.next();   // takes only 1st word
     String name = sc.nextLine();   // takes full sentence (all characters)
     
-    System.out.println(name);
-    /* */
+    System.out.println(name); 
+    
+/* .length()  method in Strings*/
+    // paranthesis  is necessary because its a method  
+    
    
   }
 }
