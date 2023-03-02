@@ -23,7 +23,7 @@ public class Strings_prog{
      * split()
      * join()
      * lastindexOf() with and without parameter passing
-     * stringBuilder
+     * StringBuilder
      * */
     String stationary  ="pen,pencil,eraser,book,notebook,scale";
     String [] st =stationary.split(",");         //split method using 1 parameter // here ' , ' is deliminator 
@@ -36,7 +36,9 @@ public class Strings_prog{
     }
     
     
-    /*To find the capacity of string builder ater increasing its capacity
+    
+    /*StringBuilder*/
+    /*To find the capacity of string builder ater increasing its capacity -->
      new capacity = max [   (old capacity + 1)*2   ,  (old no of elements+ no. of elements added now)   ]*/
      public static void main(String agrs[]){
         StringBuilder sb = new StringBuilder(); // default capacity = 16
