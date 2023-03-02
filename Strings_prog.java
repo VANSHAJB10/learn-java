@@ -35,6 +35,16 @@ public class Strings_prog{
         }
     }
     
+    
+    /*To find the capacity of string builder ater increasing its capacity
+     new capacity = max [   (old capacity + 1)*2   ,  (old no of elements+ no. of elements added now)   ]*/
+     public static void main(String agrs[]){
+        StringBuilder sb = new StringBuilder(); // default capacity = 16
+        StringBuilder sb1 = new StringBuilder("java");  // capacity = 20
+
+        sb.append("asfdjhgftghbvgyhgyu");
+        System.out.println(sb.capacity()); 
+        System.out.println("*** .capacity() method ends here ***");
    
   }
 }
