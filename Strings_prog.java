@@ -16,6 +16,23 @@ public class Strings_prog{
 /* .length()  method in Strings*/
     // paranthesis  is necessary because its a method  
     
+    /* Methods of String -- 
+     *compareto()
+     * sorting a string
+     * indexOf()
+     * split()
+     * join()
+     * lastindexOf() with and without parameter passing
+     * */
+    String stationary  ="pen,pencil,eraser,book,notebook,scale";
+    String [] st =stationary.split(",");         //split method using 1 parameter // here ' , ' is deliminator 
+
+    String [] st2 =stationary.split(",", 4);{   //split method using 2 parameters  // 4 is the limit upto which program have to split the string
+    for (String  x:st2){
+        System.out.println(x);
+        }
+    }
+    
    
   }
 }
