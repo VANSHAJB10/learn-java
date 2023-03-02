@@ -28,7 +28,8 @@ public class Strings_prog{
     String [] st =stationary.split(",");         //split method using 1 parameter // here ' , ' is deliminator 
 
     String [] st2 =stationary.split(",", 4);{   //split method using 2 parameters  // 4 is the limit upto which program have to split the string
-    for (String  x:st2){
+    // after 4th element all others are printed as it as
+      for (String  x:st2){
         System.out.println(x);
         }
     }
