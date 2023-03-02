@@ -23,6 +23,7 @@ public class Strings_prog{
      * split()
      * join()
      * lastindexOf() with and without parameter passing
+     * stringBuilder
      * */
     String stationary  ="pen,pencil,eraser,book,notebook,scale";
     String [] st =stationary.split(",");         //split method using 1 parameter // here ' , ' is deliminator 
