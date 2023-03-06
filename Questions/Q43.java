@@ -1,3 +1,4 @@
+/*remove spaces in a string*/
 public class Example {
   public static void main(String[] args) {
 
