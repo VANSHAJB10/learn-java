@@ -19,3 +19,11 @@
 ↪ The hasNext() method is useful when you need to read an unknown amount of input, 
   such as when reading input from a user or from a file with an unknown number of lines.
   ↣ By using hasNext() to check for more data, you can avoid reading past the end of the input and causing errors in your program.
+
+↪ Sample code of .hasNext() method:
+if (scanner.hasNext()) {
+  // do something with the input
+  } 
+else {
+  // handle end of input
+  }
