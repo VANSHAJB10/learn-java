@@ -69,3 +69,10 @@ Scanner scanner = new Scanner(System.in);
 int number = scanner.nextInt();
 String text = scanner.nextLine().trim();
 
+
+/* Q6 */
+To make a string left justified and within a field of 15 characters.
+
+String str = "Hello, world!";
+String leftJustified = String.format("%-15s", str);
+System.out.println(leftJustified);
