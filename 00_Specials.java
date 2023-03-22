@@ -44,3 +44,28 @@ class Test
 }  
 /*output = error 
 --->  because the for loop demands a boolean value in the second part ; and we are providing an integer value, i.e., 0. */
+
+/* Q5 */
+Note --> If you use the nextLine() method immediately following the nextInt() method, recall that nextInt() reads integer tokens; 
+because of this, the last newline character for that line of integer input is still queued in the input buffer and the next nextLine()
+will be reading the remainder of the integer line (which is empty).
+
+Solution for this -->
+/*solution 1*/
+Use an additional nextLine() method to consume the newline character that was left in the buffer after the integer input. 
+
+For example:
+Scanner scanner = new Scanner(System.in);
+int number = scanner.nextInt();
+scanner.nextLine(); // consume the newline character
+String text = scanner.nextLine();
+
+/*solution 2*/
+use the trim() method to remove any leading or trailing whitespace from the input string. 
+This will remove the newline character that was left in the buffer after the integer input. 
+
+For example:
+Scanner scanner = new Scanner(System.in);
+int number = scanner.nextInt();
+String text = scanner.nextLine().trim();
+
