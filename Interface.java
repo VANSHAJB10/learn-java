@@ -16,3 +16,24 @@ Multiple inheritance can be implemented using Interfaces
  * By default variable are static and public
  * By default methods are sttic and public
  
+
+ /***/**************** *** Implementation of Interfaces *** ******************/***/
+
+interface interface1_name{
+    void emptyfunc();
+    void method1();
+}
+
+class Main implements interface1_name, interface2_name{
+    public void emptyfunc(){
+        System.out.println("implementing")
+    }
+    public void method1(){
+        
+    }
+
+    public static void main (String args[]){
+        System.out.println("Main function starts here");
+
+    }
+}
