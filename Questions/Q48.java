@@ -18,3 +18,10 @@ public static void main(String[] argv) throws Exception {
 	System.out.println(dateFormat.format(dat));
   }
 }
+
+
+/*
+--> SimpleDateFormat class extends DateFormat class. 
+--> SimpleDateFormat class is also helpful to convert date to text format
+    and also it’s parsing from text to date format and in normalization.
+*/
