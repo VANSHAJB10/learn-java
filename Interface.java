@@ -17,6 +17,8 @@ Multiple inheritance can be implemented using Interfaces
  * By default methods are sttic and public
  
 
+
+
  /***/**************** *** Implementation of Interfaces *** ******************/***/
 
 interface interface1_name{
@@ -38,6 +40,9 @@ class Main implements interface1_name, interface2_name{
     }
 }
 
+
+
+
 /***** Some points toemember *****/
 *default can be called using class object but not using interface names. 
 *overwriting default methods becomes necessary in case of ambiguities else its not compulsary to overwrite
@@ -46,3 +51,12 @@ class Main implements interface1_name, interface2_name{
    
 *QUESTION --> Can 2 parent interfaces have  static methods with same signature?
  *ANSWER -->   YES , becoz... 
+
+
+
+
+ /**/ ************* Functional Interface ***************/**/
+
+*it specifies only one abstract method
+*equals and toString() method belong to Object class 
+*methods of object class allows to have more than one
