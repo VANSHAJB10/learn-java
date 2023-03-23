@@ -37,3 +37,12 @@ class Main implements interface1_name, interface2_name{
 
     }
 }
+
+/***** Some points toemember *****/
+*default can be called using class object but not using interface names. 
+*overwriting default methods becomes necessary in case of ambiguities else its not compulsary to overwrite
+
+* static can be called using interface name
+   
+*QUESTION --> Can 2 parent interfaces have  static methods with same signature?
+ *ANSWER -->   YES , becoz... 
