@@ -1,4 +1,4 @@
-//Continue statement
+// Continue statement
 
 import java.util.*;
 public class Jump {
@@ -12,6 +12,25 @@ public class Jump {
 				continue;
 			}
 			System.out.print(i + " ");
+		}
+	}
+}
+
+
+// Continue statement inside the While loop
+public class Jump {
+	public static void main(String args[])
+	{
+		int count = 20;
+		while (count >= 0) {
+			if (count == 7 || count == 15) {
+				count--;
+				/* Decrementing variable initialized above showing continue execution inside loop skipping when count==7 or count==15*/
+				continue;
+
+			}
+			System.out.print(count + " ");
+			count--;
 		}
 	}
 }
