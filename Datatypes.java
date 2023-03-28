@@ -14,3 +14,7 @@ size:   byte < short < int < long
 
 Java uses 'Unicode system' not ASCII code system.
  * This is the reason why char uses 2 byte in java.
+
+In unicode system-->
+  lowest value:\u0000
+  highest value:\uFFFF
