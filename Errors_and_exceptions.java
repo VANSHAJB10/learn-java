@@ -10,12 +10,20 @@ Logical errors - Occurs when a prog is compiled and it runs but gives wrong outp
 Runtime errors - The program crashes abruptly while running
 They are called exceptions.
 
+
+
+Exceptions -->
+Exception is a class and to find out which type of exception has occured ... and object of the Exception can be created and printed to get the exception name as output.
+
+If the exception is not handled using try catch block the program will not execute from that point.
+
 Causes of runtime errors(exceptions)-->
     1. Resource constraint
     2. Bad input
     3. Divide by zero
 
 *** Runtime errors must not be ignored while development of a program. They must be handled to keep up user experience and satisfaction ***
+
 
 Built-In exceptions in Java -->
     1. NullPointerException: This is the most happening exception. This exception throws if the system expects an object but actually it was null.
