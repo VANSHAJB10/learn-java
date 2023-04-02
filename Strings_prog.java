@@ -1,22 +1,33 @@
 import java.util.*;
 public class Strings_prog{
   public static void main (String []args){
-    /*two ways of string declaration*/
+
+/*two ways of string declaration*/
     String str="java programming";
     String str2 = new String("abcd");
 
 
-
 /* == in strings */
+
 String s1 = "Tony";
-String s2 = "Tony";
+String s2 = "Tony";                       /* s2 and s1 points to same memory block. --> there is only one string and both s1 and s2 are pointing to that */
+String s3 = new String ("Tony");          /* This creates a new string in the memory and s3 points to that new string */
 
 if (s1 == s2){
   System.out.println("Equal strings");
   }
 else{
   System.out.println("UnEqual Strings");
+  }                                        /*True: because there is only one string and both s1 and s2 are pointing to that*/
+
+
+if (s1 == s3){                             /*  False : because s1 and s3 are pointing to two different strings in memory*/
+  System.out.println("Equal strings");
   }
+else{
+  System.out.println("UnEqual Strings");
+  }
+
 
 
 
