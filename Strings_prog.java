@@ -4,6 +4,23 @@ public class Strings_prog{
     /*two ways of string declaration*/
     String str="java programming";
     String str2 = new String("abcd");
+
+
+
+/* == in strings */
+String s1 = "Tony";
+String s2 = "Tony";
+
+if (s1 == s2){
+  System.out.println("Equal strings");
+  }
+else{
+  System.out.println("UnEqual Strings");
+  }
+
+
+
+
     
     /*Strings are immutable*/
     
