@@ -2,7 +2,7 @@ import java.util.*;
 public class Strings_prog{
   public static void main (String []args){
 
-/*two ways of string declaration*/
+/* two ways of string declaration */
     String str="java programming";
     String str2 = new String("abcd");
 
@@ -29,11 +29,20 @@ else{
   }
 
 
+// To chack if wo strings are equal --> use .equals() method. 
+
+/* .equals() method  */                                     //It returns a boolean type value
+if ( String s1.equals(s3) ) {
+System.out.println("Equal strings");
+  }
+else{
+  System.out.println("UnEqual Strings");
+  }   
 
 
 
     
-    /*Strings are immutable*/
+/*Strings are immutable*/
     
     Scanner sc = new Scanner(System.in);
     String name = sc.next();   // takes only 1st word
