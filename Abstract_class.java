@@ -40,4 +40,5 @@ public class Abstract_class {
 * An abstract class can have abstract and non-abstract methods.
 * It needs to be extended and its method implemented. 
 * It cannot be instantiated.
-
+* It can have constructors and static methods also.
+* It can have final methods which will force the subclass not to change the body of the method.
