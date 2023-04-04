@@ -32,6 +32,13 @@ public class Abstract_class {
     
 }
 
+
+/*
+*** Factory mehod *** 
+A factory method is a method that returns the instance of the class.
+*/
+
+
 /*There are two ways to achieve abstraction:
 
 --> Abstract class (0 to 100%)
@@ -42,3 +49,4 @@ public class Abstract_class {
 * It cannot be instantiated.
 * It can have constructors and static methods also.
 * It can have final methods which will force the subclass not to change the body of the method.
+*/
