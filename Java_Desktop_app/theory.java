@@ -51,10 +51,10 @@ Thread.sleep(1000);
  corresponding to every event there is a predefined listner Interface
 
 Action Events: buttons, menuItems
-KeyEvents:                                                              --> KeyListner
-MouseEvent: Any click with the mouse , Scroll                           --> MouseListner
-FocusEvent: when u click on a fielf the already written text disappers  --> FocusListner
-WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing
+KeyEvents:                                                              --> KeyListener
+MouseEvent: Any click with the mouse , Scroll                           --> MouseListener
+FocusEvent: when u click on a field the already written text disappers  --> FocusListener
+WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing . But this is rarely used.
 
 
 to implement events make a class that implements its listner
