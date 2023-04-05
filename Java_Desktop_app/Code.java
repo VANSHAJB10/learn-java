@@ -1,5 +1,8 @@
 import java.awt.*;
 
+class MyGame{
+static int h = 0, m=0, s=0;  // read in timer section below
+public static void main(String agrs[]){
 
 JFrame f= new JFrame("Puzzle game")//Frame can be created without any parameter
 Jpanel centre = new JPanel();
@@ -41,7 +44,7 @@ date.setText(dt + "\t" + lt);  // set method will set the date and tie to the la
 
 //Timer 
 /* it is a counter  */
-int h=0, m=0, s=0;   // initially al are 0.
+//  ********* [Showing error but we cant make it final so we have to make it global variable ]  **********  int h=0, m=0, s=0;   // initially al are 0. 
 
 timer.setText(""+h + " : " + m + " : " + s); 
 //  **** WOW!!! **** setText method take as string parameter so a empty "" is concatenated before hours 
@@ -49,6 +52,33 @@ timer.setText(""+h + " : " + m + " : " + s);
 // To make multiple codes to run PARALLELY --> Thread is used
 // here we want the the timer to keep running while the game is being played parallely
 // Thread is in --> java.lang package
+
+
+Thread timer_thread = new Thread(
+  /*Lambda to implement run() */
+() -> {
+         while true()
+         {
+              s ++;
+
+              if ( s == 60){
+                m++;
+                s=0;  
+              }
+              if ( m == 60 ){
+                h++;
+                m=0;
+              }
+try{
+        Thread.sleep(1000); // takes time in milli second
+        // sleep method is static method
+        // sleep method throws Interrupted exception 
+}
+catch (InterrupterException e){}
+
+         }
+      }
+);
 
 
 //properties of frame
