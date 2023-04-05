@@ -32,6 +32,8 @@ timer.setText(""+h + " : " + m + " : " + s);
  Thread is in --> java.lang package */
 
 Thread.sleep(1000); 
+/* sleep(long,int)  --> if for a particular time in int the code is not getting executed then it will automatically wake up*/
         // takes time in milli second
         // sleep method is static method
-        // sleep method throws Interrupted exception 
+        // sleep method throws Interrupted exception
+// there is no alternative for thread.sleep() ... we have to handle the exception   
