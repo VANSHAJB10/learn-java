@@ -34,9 +34,20 @@ f.add(timer, BorderLayout.NORTH);     /*  to display timer at the top  -->  Bord
 f.add(date, BorderLayout,SOUTH);
 
 LocalDate dt = LocalDate.now();   // to take local time of machine
-LocalTime lt = LocalTime.now();
+LocalTime lt = LocalTime.now();   // time will not be updated automatically!!!    ******************************************
 
 date.setText(dt + "\t" + lt);  // set method will set the date and tie to the label
+
+
+//Timer 
+/* it is a counter  */
+int h=0, m=0, s=0;   // initially al are 0.
+
+timer.setText(""+h + " : " + m + " : " + s); 
+//  **** WOW!!! **** setText method take as string parameter so a empty "" is concatenated before hours 
+
+
+
 
 //properties of frame
 f.setSize(600,600);
