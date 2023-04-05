@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event*;  // to import Events and Listner
 
 class MyGame{
 static int h = 0, m=0, s=0;  // read in timer section below
@@ -11,8 +12,15 @@ Jpanel centre = new JPanel();
 JPanel centre = new JPanel();
 centre.setLayout(new GridLayout(3,3));
 
-for(){
 
+//Creating Listner object          **************************************************************************************************
+MyListner ml = new MyListner;
+
+for(int i=0; i<9; i++){
+    JButton b= new JButton();
+    centre.add(b);
+
+    b.addActionListner();  // whenever button is clicked it is registered with the listner
 }
 f.add(center);
 
@@ -86,3 +94,26 @@ f.setSize(600,600);
 f.setLocationRelativeTo(null);
 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 f.setVsible(true);
+
+}
+}
+
+
+class MyListner implements ActionListner{
+  publc void actionPerformed(ActionEvent e)
+  {
+    // to register a listner write addEventListner
+// it is wriiten for each button to perform action
+
+
+
+//to show a pop-up
+JOptionPane.showMessageDialog(MyGame.f, "Button Clicked");   // it will show error as it cant use object of class 'MyGame' .. make it global by making it static and keeping outside main *****************
+
+  }
+
+}
+
+
+
+
