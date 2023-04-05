@@ -6,3 +6,6 @@ p.add(new JButton("2"));
 // Runtime error 
 // as in ***   p.setLayout(new GridLayout(int 1 , int 2)); *** -->  0 as an input is considered as a variable and the int value is taken to be a constant.
 
+
+/*Tic Tac Toe*/
+Panel will be havng grid layout of 3 x 3 
