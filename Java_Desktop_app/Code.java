@@ -1,4 +1,4 @@
-mport java.awt.*;
+import java.awt.*;
 
 
 JFrame f= new JFrame("Puzzle game")//Frame can be created without any parameter
