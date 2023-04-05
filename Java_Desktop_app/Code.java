@@ -17,12 +17,14 @@ centre.setLayout(new GridLayout(3,3));
 MyListner ml = new MyListner;
 
 for(int i=0; i<9; i++){
-    JButton b= new JButton();
-    centre.add(b);
+        JButton b= new JButton();
+        centre.add(b);
 
-    b.addActionListner();  // whenever button is clicked it is registered with the listner
-}
-f.add(center);
+        b.addActionListner();  // whenever button is clicked , listner is registered with it
+    }
+
+f.add(center); 
+ 
 
 /* 'Timer' on the top and name of player OR ' Date and Time at the bottom ' are labels*/ 
 
@@ -100,11 +102,10 @@ f.setVsible(true);
 
 
 class MyListner implements ActionListner{
-  publc void actionPerformed(ActionEvent e)
+  public void actionPerformed(ActionEvent e)
   {
-    // to register a listner write addEventListner
+    // to register a listner - write addEventListner
 // it is wriiten for each button to perform action
-
 
 
 //to show a pop-up
@@ -113,7 +114,4 @@ JOptionPane.showMessageDialog(MyGame.f, "Button Clicked");   // it will show err
   }
 
 }
-
-
-
 
