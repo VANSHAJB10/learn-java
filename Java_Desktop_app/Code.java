@@ -46,7 +46,9 @@ int h=0, m=0, s=0;   // initially al are 0.
 timer.setText(""+h + " : " + m + " : " + s); 
 //  **** WOW!!! **** setText method take as string parameter so a empty "" is concatenated before hours 
 
-
+// To make multiple codes to run PARALLELY --> Thread is used
+// here we want the the timer to keep running while the game is being played parallely
+// Thread is in --> java.lang package
 
 
 //properties of frame
