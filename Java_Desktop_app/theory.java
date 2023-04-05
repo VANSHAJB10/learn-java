@@ -30,3 +30,8 @@ timer.setText(""+h + " : " + m + " : " + s);
 /* To make multiple codes to run PARALLELY --> Thread is used
  here we want the the timer to keep running while the game is being played parallely
  Thread is in --> java.lang package */
+
+Thread.sleep(1000); 
+        // takes time in milli second
+        // sleep method is static method
+        // sleep method throws Interrupted exception 
