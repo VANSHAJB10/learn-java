@@ -59,3 +59,7 @@ WindowEvent: provides 7 functionalities window open , window close, window activ
 
 to implement events make a class that implements its listner
 */
+
+QUESTION -- Which is a lightweght process?
+JDialogue, JFrame inherts 
+JPanel and Any subclass of JPanel is lightweight process .
