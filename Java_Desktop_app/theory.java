@@ -95,3 +95,11 @@ example -- t1.add KeyListner(ob);
 QUESTION -- Which is a lightweght process?
 JDialogue, JFrame inherts 
 JPanel and Any subclass of JPanel is lightweight process .
+
+
+
+
+/* Login form */
+* if u dont want ot display dots in password but *    -->    p1.setEchoChar('*');
+* 
+
