@@ -1,3 +1,7 @@
+/*
+Local and anonymous classes are non static 
+*/
+
 /*ALL constants are defined in UPPERCASE*/  
 
 JPanel p = new JPanel();
