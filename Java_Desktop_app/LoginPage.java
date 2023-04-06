@@ -1,12 +1,13 @@
 import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
 
 class LoginPage{
   public static void main(String args[]){
     JFrame f = new JFrame("Login");
     f.setSize(600,500);
-
-
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    f.setLocationRelativeTo(null);
     f.setLayout(new GrdLayout(2,2,50,30));   // (rows, columns, horizontal gap , vertical gap) 50,30 --> horizontal, vertical gap   (gap is the padding betwwen components nt between component and border) 
     
 
@@ -16,16 +17,32 @@ class LoginPage{
     JButton b1 = new JButton("");
 
     // Local Listner class --> defned inside any other block (loop, method, constructor OR class)
-    class MyListner implements ActionListner
+    class MyListener implements ActionListener
     {
-      public void actionPerformed(ActionEvent ev){
-        if ()ev.getSource() == b1){
-           JOption
-        }
-      }
+        public void actionPerformed(ActionEvent ev)
+        {
+          if(ev.getSource() == b1)
+            {
+                JOptionPane.showMessageDialog(f, "Hello "+t1.getText());
+            }
+            else if(ev.getActionCommand().equals("Clear"))
+            {
+                t1.setText(null);
+                p1.setText(null);
+            }
+       }
     }
 
+    MyListener ml = new MyListener();
+    b1.addActionListener(ml);
+    b2.addActionListener(ml);
 
+     //Object getSource()
+      f.add(t1);
+      f.add(p1);
+      f.add(b1);
+      f.add(b2);
+
+        f.setVisible(true);
   }
-
 }
