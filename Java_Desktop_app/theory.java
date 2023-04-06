@@ -51,17 +51,36 @@ Thread.sleep(1000);
  corresponding to every event there is a predefined listner Interface
 
 // Listner --> defined in java.awt.event package;
-ItemEvent : when a menu provide different ptions to choose one from them  (radio button, dropdown menu, etc)
-Action Events: buttons, menuItems                                       --> Action Listener
-KeyEvents:  When typng through keys of keyboard                         --> KeyListener
-MouseEvent: Any movement of mouse (motion not clcks)                    --> MouseListener, MouseMotion Listner
-FocusEvent: when u click on a field the already written text disappers  --> FocusListener
-WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing . But this is rarely used.
+* ItemEvent : when a menu provide different ptions to choose one from them  (radio button, dropdown menu, etc)
+* Action Events: buttons, menuItems                                       --> Action Listener
+* KeyEvents:  When typng through keys of keyboard                         --> KeyListener
+* MouseEvent: Any movement of mouse (motion not clcks)                    --> MouseListener, MouseMotion Listner
+* FocusEvent: when u click on a field the already written text disappers  --> FocusListener
+* WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing . But this is rarely used.
 
 
+*
 to implement events make a class that implements its listner
+
+example --
+class MyClass implements ActionListenr
+{
+ 
+   }
+
+* If a button is registered with a Listner then only the Listner class will respond
+syntax  -- add XXX Listner (object of Listner class)
+example -- t1.add KeyListner(ob);
+
+
+* 
+/* ATTENTION */ 
+*  Multiple classes for multiple can be created and also
+   Single Listner class can be used to implement multiple Event Listners. (as multiple Interfaces can be implemented)
+
 */
 
+**
 QUESTION -- Which is a lightweght process?
 JDialogue, JFrame inherts 
 JPanel and Any subclass of JPanel is lightweight process .
