@@ -77,6 +77,13 @@ syntax  -- add XXX Listner (object of Listner class)
 example -- t1.add KeyListner(ob);
 
 
+*** FocusListner ***  -- 
+* it is an Interface
+* it has 2 methods-->focusLost , focusGained
+* these methods are automatically fired by JVM -- it automatically identify, and call the method
+
+
+
 * 
 /* ATTENTION */ 
 *  Multiple classes for multiple can be created and also
