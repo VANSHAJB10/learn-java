@@ -50,9 +50,11 @@ Thread.sleep(1000);
  Every _________ has a event associated wth it 
  corresponding to every event there is a predefined listner Interface
 
-Action Events: buttons, menuItems
-KeyEvents:                                                              --> KeyListener
-MouseEvent: Any click with the mouse , Scroll                           --> MouseListener
+// Listner --> defined in java.awt.event package;
+ItemEvent : when a menu provide different ptions to choose one from them  (radio button, dropdown menu, etc)
+Action Events: buttons, menuItems                                       --> Action Listener
+KeyEvents:  When typng through keys of keyboard                         --> KeyListener
+MouseEvent: Any movement of mouse (motion not clcks)                    --> MouseListener, MouseMotion Listner
 FocusEvent: when u click on a field the already written text disappers  --> FocusListener
 WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing . But this is rarely used.
 
