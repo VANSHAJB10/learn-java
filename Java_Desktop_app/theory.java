@@ -103,3 +103,34 @@ JPanel and Any subclass of JPanel is lightweight process .
 * if u dont want ot display dots in password but *    -->    p1.setEchoChar('*');
 * 
 
+
+/* Unit convertor */
+// * JcheckBox --> multiple selection
+
+// * for single selection -->
+// JComboBox 
+// JRaduoButton
+
+
+import java.swing.*;
+
+class unit_concerter{
+public static void main(String[] args) {
+    JFrame jf= new JFrame();
+    jf.setSize(600,400);
+    jf.setLocationRelativeTo(null);
+    jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    String []arr ={"Temp", "weight","Length","Currency"};
+    JComboBox <String> jcb = new JComboBox <String> (arr); 
+    // type of combobox (  <String>  ) is added  for 2 reasons -
+     /* 1.in non genric combobox the items of other types can be added too which can cause problem */
+    /* 2.output will be string type instead of object type */
+
+    // dynamic addition of items is also possible 
+    // by default the items are added at the end but can be added at any particular position as well.
+
+    /* <> is called Type inference diamond */
+    jcb.addItem("Time"); // time will be added at the end but to add it at a particular position, its index needs to be passed as well
+
+}
