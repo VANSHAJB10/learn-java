@@ -169,9 +169,10 @@ class KeyAdapter implements KeyListener{
 * * * * * * * * *  in implementation of CLOCK with 3 option -- time , stopwatch, worldclock  * * * * * * * * *
 the concept of Tabbed pane is used.  
 
-
-
-
+/* Important!!*/
+MouseListener, MouseMoton Listener, ' MouseWheel Listener ' are implement by MouseAdapter class
+'Other wise MouseWheel Listner do not rqure any Adapter class but it is included in MouseAdapter Class'
+MouseMotion Listener also exists
 
  
  
