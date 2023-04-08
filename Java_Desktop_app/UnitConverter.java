@@ -12,3 +12,32 @@ public class CardLayoutTest {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
         f.setVisible(true);
+
+        String [] arr ={"Red","Green","Yellow","Cyan","Magenta"};
+        JComboBox <String> jcb = new JComboBox<>(arr);
+        f. add (jcb ,BorderLayout.NORTH);
+
+        JPanel mainpanel = new JPanel();
+        CardLayout cl = new CardLayout(); // card layout object
+        mainpanel.setLayout(cl);          // setting the main panel
+        f.add(mainpanel);
+
+        JPanel p1 = new JPanel();
+        p1.setBackground(Color.red);
+        mainpanel.add(p1,"RED"); // adding panel 1 with name RED in the man panel
+
+        JPanel p2 = new JPanel();
+        p1.setBackground(Color.red);
+        mainpanel.add(p2,"MAGENTA");
+
+        JPanel p3 = new JPanel();
+        p1.setBackground(Color.green);
+        mainpanel.add(p3,"GREEN");
+
+        JPanel p4 = new JPanel();
+        p1.setBackground(Color.red);
+        mainpanel.add(p4,"YELLOW");
+
+        JPanel p5 = new JPanel();
+        p1.setBackground(Color.red);
+        mainpanel.add(p5,"CYAN");
