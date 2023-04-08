@@ -26,6 +26,12 @@ public class CardLayoutTest {
         p1.setBackground(Color.red);
         mainpanel.add(p1,"RED"); // adding panel 1 with name RED in the man panel
 
+        // in card layout to add any panel assign a name whch is a string
+/* IMPORTANT! */
+        // by default the first card which s added in mainpanel will be displayed
+        // if u have border layout the last added component will be visible
+        // if u have card layout the first added component will be visible
+
         JPanel p2 = new JPanel();
         p1.setBackground(Color.red);
         mainpanel.add(p2,"MAGENTA");
