@@ -1,9 +1,10 @@
-/*
 Local and anonymous classes are non static 
-*/
 
-/*ALL constants are defined in UPPERCASE*/  
+* ALL constants are defined in UPPERCASE *
 
+
+
+/* Concept */
 JPanel p = new JPanel();
 p.setLayout(new GridLayout(0, 0));
 p.add(new JButton("1"));
@@ -32,7 +33,7 @@ there are constants defined for font style
 
 /* Timer concept */
 timer.setText(""+h + " : " + m + " : " + s); 
-//  **** WOW!!! **** setText method take as string parameter so a empty "" is concatenated before hours 
+ **** WOW!!! ****  setText method take as string parameter so a empty "" is concatenated before hours 
 
 
 
@@ -165,7 +166,16 @@ class KeyAdapter implements KeyListener{
 }
 
 
+* * * * * * * * *  in implementation of CLOCK with 3 option -- time , stopwatch, worldclock  * * * * * * * * *
+the concept of Tabbed pane is used.  
 
+
+
+
+
+ 
+ 
+ 
 
 
 
