@@ -47,3 +47,19 @@ public class CardLayoutTest {
         JPanel p5 = new JPanel();
         p1.setBackground(Color.red);
         mainpanel.add(p5,"CYAN");
+        
+    //To create 100s of cards use loop
+/* for multiple combobox -- getsource is used */
+        class MyListener implements ItemListener{
+            public void itemStateChanged(ItemEvent e){
+                String item = (String)jcb.getSelectedItem();
+                cl.show(mainpanel,item.toUpperCase());     // string reads in upper case
+            }
+        }
+
+        MyListener ml=new MyListener();
+        jcb.addItemListener (ml);
+    }
+
+
+}    
