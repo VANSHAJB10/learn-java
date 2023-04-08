@@ -42,6 +42,29 @@ class UnitConverter
 	{
 	     public void itemStateChanged(ItemEvent e)
 	      {
+		String str = t1.getText();
+		double input = 0;
+		if(str != null)
+		        input = Double.parseDouble(str);
+		String input_type = (String) jc1.getSelectedItem();
+		String output_type = (String) jc2.getSelectedItem();
+		double result = input;
+
+		if(input_type.equals("Celcius"))
+		{
+		     if(output_type.equals("Fahrenheite"))
+		     {
+			 result = (input * 9/5)+32;
+		     }
+		     else if(output_type.equals("Kelvin"))
+		     {
+			 result = 273.15+input;
+		     }
+		   
+		}
+
+		t2.setText(""+result);	
+
               }
 	}	
 	MyListener ml = new MyListener();
