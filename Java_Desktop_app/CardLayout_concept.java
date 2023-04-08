@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CardLayoutTest {
+public class CardLayoutConcept {
     public static void main(String[] rk) {
         JFrame f = new JFrame();
         f.setSize(600, 400);
