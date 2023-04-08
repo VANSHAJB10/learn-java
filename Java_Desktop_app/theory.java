@@ -57,9 +57,9 @@ Thread.sleep(1000);
 // Listner --> defined in java.awt.event package;
 * ItemEvent : when a menu provide different ptions to choose one from them  (radio button, dropdown menu, etc)
 * Action Events: buttons, menuItems                                       --> Action Listener
-* KeyEvents:  When typng through keys of keyboard                         --> KeyListener
-* MouseEvent: Any movement of mouse (motion not clcks)                    --> MouseListener, MouseMotion Listner
-* FocusEvent: when u click on a field the already written text disappers  --> FocusListener
+* KeyEvents:  When typng through keys of keyboard       3 methods                  --> KeyListener
+* MouseEvent: Any movement of mouse (motion not clcks)  5 methods                 --> MouseListener, MouseMotion Listner
+* FocusEvent: when u click on a field the already written text disappers    2 methods        --> FocusListener
 * WindowEvent: provides 7 functionalities window open , window close, window activated, window iconified, window deiconified, window closing . But this is rarely used.
 
 
@@ -134,3 +134,49 @@ public static void main(String[] args) {
     jcb.addItem("Time"); // time will be added at the end but to add it at a particular position, its index needs to be passed as well
 
 }
+
+
+
+/* Adapter Class */
+It is a subclass of Listener Interface
+
+Corresponding to every listener interface a class is created -->  ADAPTER CLASS
+It is predefined not automatically created.
+It is provided for only for interface which have more than 1 abstract method.
+
+NO Adapter class for :
+item 
+action
+
+Adapter class exist for only :
+MouseAdapter
+KeyAdapter
+WindowAdapter
+FocusAdapter
+
+
+It provides blank implementaton to all  abstract method of Listener interfaces 
+Benefits -- You need to overwrite only those method which u want to use ... 🙂
+     Example -- no need NOT to impelemt 6 out 7 methods of Window Listener when you want to use just 1 method of it.
+
+Syntax -- 
+class KeyAdapter implements KeyListener{
+
+}
+
+
+
+
+
+
+/*  MouseMoton Listener*/
+It has 2 methods --> 
+* mouseMoved()
+* mouseDragged()
+
+
+/* KeyListener */
+It has 3 methods --> 
+* keyPressed()
+* keyReleased()
+* keyTyped()
