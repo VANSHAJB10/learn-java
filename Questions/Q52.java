@@ -4,11 +4,8 @@ class Check {
 
 	public static boolean isStringOnlyAlphabet(String str)
 	{
-
-		return ((str != null) && (!str.equals(""))
-				&& (str.matches("^[a-zA-Z]*$")));
+		return ((str != null) && (!str.equals("")) && (str.matches("^[a-zA-Z]*$")));
 	}
-
 	public static void main(String[] args)
 	{
 
@@ -27,6 +24,11 @@ class Check {
 		String str3 = null;
 		System.out.println("Input: " + str3);
 		System.out.println("Output: " + isStringOnlyAlphabet(str3));
+		
+		System.out.println("\nCase 4:"); // checking for an empty string
+		String str4 = "";
+		System.out.println("Input: " + str4);
+		System.out.println("Output: " + isStringOnlyAlphabet(str4));
 
 	}
 }
