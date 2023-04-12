@@ -35,8 +35,13 @@ public class main {
         try {
             String response = sc.nextLine();
 
-            if (!response.equalsIgnoreCase("yes") && !response.equalsIgnoreCase("no")) {
-                throw new OnlyMenzShoppingException("invalid input");
+            if (!response.equalsIgnoreCase("yes") && !response.equalsIgnoreCase("no"))
+/*  This line is an if statement that checks whether the user's input is valid or not. 
+The condition is checking if the string entered by the user, stored in the variable "response", 
+is not equal to "yes" and is also not equal to "no", while ignoring the case sensitivity of the input (using the "equalsIgnoreCase" method). */
+            
+            {
+              throw new OnlyMenzShoppingException("invalid input");
             } else if (response.equalsIgnoreCase("yes")) {
                 System.out.println("welcome to ladies or kids section");
             } else {
