@@ -51,7 +51,7 @@ public class Main {
         
 try {
     if(b == 0.0) {
-        throw new InfinityException("infinity");   // running but showing resource leak ********* EXPLANATION?
+        throw new InfinityException("infinity");   // running but showing resource leak ********* EXPLAINATION ****************** ?
     }
     else {
         System.out.println ( (float) (a / b) ); // typecasting it to float
