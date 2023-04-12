@@ -48,3 +48,20 @@ public class main {
     }
 
 }
+
+/* EXPLANATION */
+
+/* Code for how to use a custom exception class to handle specific scenarios where errors or unexpected behavior may occur in a program.
+
+The code defines a custom exception class called "OnlyMenzShoppingException" that extends the standard "Exception" class. 
+This custom exception class is used to handle a specific scenario where a user input is invalid because they are interested only in shopping for men's items.
+
+The main function of the program starts by creating a new Scanner object to read user input from the console. 
+It then uses a try-catch block to handle any exceptions that might be thrown during execution.
+
+Inside the try block, the program prompts the user for input and reads the response using the Scanner object. 
+If the response is not "yes" or "no" (case insensitive), the program throws an instance of the custom exception class with the message "invalid input". 
+If the response is "yes", the program prints "welcome to ladies or kids section" and if the response is "no", the program prints "interested only in menz shopping".
+
+If an instance of the custom exception class is thrown, the catch block is executed and the message associated with the exception is printed to the console.
+*/
