@@ -31,3 +31,36 @@ public class Main {
     }
 }
 
+
+
+// METHOD -- 2
+/* Using try catch  */
+class InfinityException extends Exception {
+    public InfinityException(String message) {
+        super(message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float a, b;
+
+        a = sc.nextFloat();
+        b = sc.nextFloat();
+        
+try {
+    if(b == 0.0) {
+        throw new InfinityException("infinity");
+    }
+    else {
+        System.out.println ( (float) (a / b) ); // typecasting it to float
+    }
+}
+
+catch (InfinityException ie) {
+            System.out.println( ie.getMessage() );
+}
+
+    }
+}
