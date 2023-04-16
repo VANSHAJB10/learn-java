@@ -191,3 +191,41 @@ It has 3 methods -->
 * keyPressed()
 * keyReleased()
 * keyTyped()
+
+ 
+ 
+ To create a checkbox that is selected by default in Java Swing --> 
+ JCheckBox checkbox = new JCheckBox("My Checkbox", true);
+ 
+ 
+ 
+ 
+ 
+/*Creating a Connection object in Java Swing involves establishing a connection to a database using a database driver and a connection URL. 
+To create a Connection object:*/
+ 
+ 
+import java.sql.*;
+
+Connection conn = null;
+try {
+    Class.forName("com.mysql.jdbc.Driver");
+    String url = "jdbc:mysql://localhost/mydatabase";
+    String username = "root";
+    String password = "mypassword";
+    conn = DriverManager.getConnection(url, username, password);
+    // do something with the connection
+} catch (ClassNotFoundException ex) {
+    // handle class not found exception
+} catch (SQLException ex) {
+    // handle SQL exception
+} finally {
+    try {
+        if (conn != null) {
+            conn.close();
+        }
+    } catch (SQLException ex) {
+        // handle SQL exception
+    }
+}
+
