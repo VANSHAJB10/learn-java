@@ -210,6 +210,34 @@ jcb.insertItemAt("Java", index); // add "Java" as the 3rd item in the JComboBox
  
  
  
+/* Interfaces  defined in the java.sql package: */
+
+Driver: This interface provides the basic service for managing a set of JDBC drivers.
+
+DriverAction: This interface provides a way to register an action to be performed when a driver is deregistered.
+
+ResultSet: This interface represents a table of data resulting from a query.
+
+ResultSetMetaData: This interface provides methods for getting information about the columns in a ResultSet.
+
+Connection: This interface represents a connection to a database.
+
+Statement: This interface provides methods for executing SQL statements and returning the results.
+
+PreparedStatement: This interface extends the Statement interface and provides support for precompiled statements.
+
+CallableStatement: This interface extends the PreparedStatement interface and provides support for stored procedures.
+
+DatabaseMetaData: This interface provides methods for getting information about the database as a whole.
+
+ParameterMetaData: This interface provides methods for getting information about the parameters of a PreparedStatement. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 /*Creating a Connection object in Java Swing involves establishing a connection to a database using a database driver and a connection URL. 
 To create a Connection object:*/
  
