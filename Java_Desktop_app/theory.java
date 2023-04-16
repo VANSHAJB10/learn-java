@@ -198,6 +198,15 @@ It has 3 methods -->
  JCheckBox checkbox = new JCheckBox("My Checkbox", true);
  
  
+ /*JComboBox*/
+
+ // Some operations in ComboBox 
+jcb.addItem("Java"); // add "Java" as the last item in the JComboBox
+int index = 2; // index of the item before which we want to add the new item
+jcb.insertItemAt("Java", index); // add "Java" as the 3rd item in the JComboBox
+
+ 
+ 
  
  
  
