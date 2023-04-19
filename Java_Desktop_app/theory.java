@@ -200,6 +200,28 @@ It has 3 methods -->
  
  /*JComboBox*/
 
+ Used to show a menu (drop down menu at the top)for user to select
+ 
+  //code
+import javax.swing.*;    
+public class ComboBoxExample {    
+JFrame f;    
+ComboBoxExample(){    
+    f=new JFrame("ComboBox Example");    
+    String country[]={"India","Aus","U.S.A","England","Newzealand"};        
+    JComboBox cb=new JComboBox(country);    
+    cb.setBounds(50, 50,90,20);    
+    f.add(cb);        
+    f.setLayout(null);    
+    f.setSize(400,500);    
+    f.setVisible(true);         
+}    
+public static void main(String[] args) {    
+    new ComboBoxExample();         
+}    
+}   
+ 
+ 
  // Some operations in ComboBox 
 jcb.addItem("Java"); // add "Java" as the last item in the JComboBox
 int index = 2; // index of the item before which we want to add the new item
