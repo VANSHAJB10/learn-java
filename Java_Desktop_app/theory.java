@@ -1,9 +1,25 @@
 Java Swing provides 'platform-independent'and 'lightweight components'.
 ↪ 'javax.swing' package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser.
 
+All the things (buttons, Labels, etc) are inside a "Frame".
+2 ways to crete a Frame :
+--> By creating the object of Frame class (association)
+--> By extending Frame class (inheritance)
 
-
-
+ /* Creating a Frame in Java Swing*/
+import javax.swing.*;  
+public class SwingFrame 
+{  
+public static void main(String[] args) {  
+ JFrame f=new JFrame();                      //creating instance of JFrame  
+          
+ f.setSize(400,500);                         // width,height  of Frame
+ f.setLayout(null);                          //using NO layout managers  
+ f.setVisible(true);                         //to make the frame visible  
+ }  
+}  
+ 
+ 
 Local and anonymous classes are non static 
 
 * ALL constants are defined in UPPERCASE *
