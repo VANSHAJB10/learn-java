@@ -1,3 +1,9 @@
+Java Swing provides 'platform-independent'and 'lightweight components'.
+↪ 'javax.swing' package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser.
+
+
+
+
 Local and anonymous classes are non static 
 
 * ALL constants are defined in UPPERCASE *
