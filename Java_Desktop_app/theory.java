@@ -16,9 +16,17 @@ public static void main(String[] args) {
  f.setSize(400,500);                         // width,height  of Frame
  f.setLayout(null);                          //using NO layout managers  
  f.setVisible(true);                         //to make the frame visible  
+ 
+ //edit1
+ /*To add a button in the frame*/
+ JButton b=new JButton("Click Here");       //creating instance of JButton  
+ b.setBounds(130,100,100, 40);              // creatinvg x axis, y axis, width, height  
+          
+ f.add(b);                                  //adding button in JFrame  
  }  
 }  
  
+
  
 Local and anonymous classes are non static 
 
