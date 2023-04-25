@@ -8,6 +8,14 @@ public class GUI extends JFrame {
    private JLabel clockLabel;
     private Timer clockTimer;
     private DateTimeFormatter timeFormat;
+   
+    private JLabel stopwatchLabel;
+    private JButton startButton, stopButton, resetButton;
+    private Timer stopwatchTimer;
+
+    private int elapsedTime = 0;
+    private int hours = 0, minutes = 0, seconds = 0, milliseconds = 0;
+    private boolean stopwatchStarted = false;
 
    public GUI() {
         super("Time");
@@ -19,14 +27,38 @@ public class GUI extends JFrame {
         clockLabel.setFont(new Font("Monospaced", Font.BOLD, 32));
         clockPanel.add(clockLabel);
       
-      
-       private JLabel stopwatchLabel;
-    private JButton startButton, stopButton, resetButton;
-    private Timer stopwatchTimer;
+        // create the stopwatch tab
+        JPanel stopwatchPanel = new JPanel(new BorderLayout());
+        stopwatchLabel = new JLabel("00:00:00.00", SwingConstants.CENTER);
+        stopwatchLabel.setFont(new Font("Monospaced", Font.BOLD, 32));
+        stopwatchPanel.add(stopwatchLabel, BorderLayout.CENTER);
 
-    private int elapsedTime = 0;
-    private int hours = 0, minutes = 0, seconds = 0, milliseconds = 0;
-    private boolean stopwatchStarted = false;
+        JPanel stopwatchButtonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        startButton = new JButton("Start");
+        startButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                startStopwatch();
+            }
+        });
+        
+        stopwatchButtonPanel.add(startButton);
+
+        stopButton = new JButton("Stop");
+        stopButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                stopStopwatch();
+            }
+        });
+        stopwatchButtonPanel.add(stopButton);
+
+        resetButton = new JButton("Reset");
+        resetButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                resetStopwatch();
+            }
+        });
+        stopwatchButtonPanel.add(resetButton);
+        stopwatchPanel.add(stopwatchButtonPanel, BorderLayout.SOUTH);   // adding button panel of stopwatch to the bottom of JPanel - Stopwatch
       
      
      //create the tabbed pane and add the clock and stopwatch tabs
