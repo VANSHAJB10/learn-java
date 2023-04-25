@@ -18,6 +18,16 @@ public class GUI extends JFrame {
         clockLabel = new JLabel(LocalTime.now().format(timeFormat), SwingConstants.CENTER);
         clockLabel.setFont(new Font("Monospaced", Font.BOLD, 32));
         clockPanel.add(clockLabel);
+      
+      
+       private JLabel stopwatchLabel;
+    private JButton startButton, stopButton, resetButton;
+    private Timer stopwatchTimer;
+
+    private int elapsedTime = 0;
+    private int hours = 0, minutes = 0, seconds = 0, milliseconds = 0;
+    private boolean stopwatchStarted = false;
+      
      
      //create the tabbed pane and add the clock and stopwatch tabs
         JTabbedPane tabbedPane = new JTabbedPane();
