@@ -83,6 +83,47 @@ public class GUI extends JFrame {
         setVisible(true);
     }
    
+   private void startStopwatch() {
+        stopwatchStarted = true;
+        stopwatchTimer = new Timer(10, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                elapsedTime += 10;
+                milliseconds += 10;
+                if (milliseconds == 1000) {
+                    seconds++;
+                    milliseconds = 0;
+                }
+                if (seconds == 60) {
+                    minutes++;
+                    seconds = 0;
+                }
+                if (minutes == 60) {
+                    hours++;
+                    minutes = 0;
+                }
+                updateTime();
+            }
+        });
+        stopwatchTimer.start();
+    }
+
+    private void stopStopwatch() {
+        stopwatchStarted = false;
+        stopwatchTimer.stop();
+    }
+
+
+private void resetStopwatch() {
+    stopwatchStarted = false;
+    stopwatchTimer.stop();
+    elapsedTime = 0;
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+    updateTime();
+}
+   
    private void updateTime() {
     String hoursStr = String.format("%02d", hours);
     String minutesStr = String.format("%02d", minutes);
