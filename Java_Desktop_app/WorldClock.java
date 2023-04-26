@@ -40,6 +40,7 @@ class WorldClock {
 				//to fetch x and y cordinates of mouse pointer
 				x = m.getX();
 				y = m.getY();
+			l.setText(x + ", " + y); // display coordinates
         
         
      }
