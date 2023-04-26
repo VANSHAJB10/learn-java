@@ -147,7 +147,7 @@ class WorldClock {
 					l.setText("Welcome to US Pacific Region. Time is: " + t);
 				}
 			
-        
+			}
         
      }
 
