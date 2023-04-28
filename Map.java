@@ -24,3 +24,11 @@ System.out.println(s2);
 Collection v1 = m2.values();
 System.out.println(v1);
 
+
+
+
+// Entry SET
+
+Set<Map.Entry> ss = m2.entrySet();
+for (Map.Entry m2 :ss){
+       System.out.println(m2.getKey());
