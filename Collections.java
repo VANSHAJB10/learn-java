@@ -16,6 +16,7 @@ CODE--> public interface List<E> extends Collection<E>
 CODE--> public interface Set<E> extends Collection<E> 
     1.4
     Queue interface: Queue (java.util.Queue) interface defines queue data structure, which stores the elements in the form FIFO (first in first out).
+        CODE--> public interface Queue<E> extends Collection<E>  
   
 Advantages of genric collection-->
 --> If we use the generic class, we don't need typecasting.
