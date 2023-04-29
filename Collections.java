@@ -14,6 +14,8 @@ CODE--> public interface List<E> extends Collection<E>
     Set interface: Set (java.util.Set) interface is a collection which cannot contain duplicate elements. 
     It can only include inherited methods of Collection interface.
 CODE--> public interface Set<E> extends Collection<E> 
+    1.4
+    Queue interface: Queue (java.util.Queue) interface defines queue data structure, which stores the elements in the form FIFO (first in first out).
   
 Advantages of genric collection-->
 --> If we use the generic class, we don't need typecasting.
