@@ -21,9 +21,13 @@ CODE--> public interface Queue<E> extends Collection<E>
     Dequeue interface: it is a double-ended-queue. It allows the insertion and removal of elements from both ends. 
     It implants the properties of both Stack and queue so it can perform LIFO (Last in first out) stack and FIFO (first in first out) queue, operations.
 CODE--> public interface Dequeue<E> extends Queue<E> 
+
+'    <E> represents that this interface is of Generic type    '
+
     1.6
     Map interface: A Map (java.util.Map) represents a key, value pair storage of elements. Map interface ! *** does not implement the Collection interface. ***!
     It can only contain a unique key but can have duplicate elements. There are two interfaces which implement Map in java that are Map interface and Sorted Map.
+        
         
         
         
