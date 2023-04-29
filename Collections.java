@@ -10,7 +10,10 @@ CODE--> public interface Collection<E>extends Iterable
     List interface: List interface extends the Collection interface, and it is an ordered collection of objects. 
     It contains duplicate elements. It also allows random access of elements.
 CODE--> public interface List<E> extends Collection<E> 
-    
+    1.3
+    Set interface: Set (java.util.Set) interface is a collection which cannot contain duplicate elements. 
+    It can only include inherited methods of Collection interface.
+CODE--> public interface Set<E> extends Collection<E> 
   
 Advantages of genric collection-->
 --> If we use the generic class, we don't need typecasting.
