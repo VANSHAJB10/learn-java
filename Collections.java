@@ -7,6 +7,9 @@ and 'interfaces' such as List, Queue, Set, etc.
     Collection interface: Collection (java.util.Collection) is the primary interface, and *** every collection must implement this interface. ***
 CODE--> public interface Collection<E>extends Iterable  
     1.2
+    List interface: List interface extends the Collection interface, and it is an ordered collection of objects. 
+    It contains duplicate elements. It also allows random access of elements.
+CODE--> public interface List<E> extends Collection<E> 
     
   
 Advantages of genric collection-->
