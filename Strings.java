@@ -78,6 +78,7 @@ else{
     }
     
     
+    
 /* .compareTo()  method */
   // used to comapre the strings Lexographically (alphabetical order)
  
@@ -87,7 +88,24 @@ str.compareTo(str2);     /*
                               > 0         --      string 1 > string 2
                               < 0         --      string 1 < string 2
                          */
+
+/* compareToIgnoreCase() */
+.compareToIgnoreCase()    --> it ignores uppercase or lowercase 
     
+//code-->
+// to print largest string in an array
+String [] fruits ={"banana","mango", "apple", "kiwi"};
+Stirng largest = fruits[0];      // initializing the first element of array as the largest value beforehand.
+    
+for (int i = 0; i < fruits.length(); i++){
+  if( largest.compareToIgnoreLowerCase(fruits[i]) < 0){
+    largest = fruits[i];
+  }
+System.out.println{largest};  
+}
+
+
+
     
     
     /*StringBuilder*/
