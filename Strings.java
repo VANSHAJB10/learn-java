@@ -148,6 +148,9 @@ A new Object 'Tony' is created instead of Interning. And s3 stores a different o
       
 
 
+
+
+
 /* .toString() */
   // converts any Object to String.    
   /*  Only Objects are converted to String 
@@ -160,18 +163,28 @@ A new Object 'Tony' is created instead of Interning. And s3 stores a different o
 
 
 
+    
+    
 
 */    
     /*StringBuilder*/
+  // Strings of this type can be modified.  It overcomes the quadratic time complexity problem of Strings.
+     
+        StringBuilder sb = new StringBuilder(); // default capacity = 16 
+        StringBuilder sb1 = new StringBuilder("java");  // capacity = 20
+  
+/* .append() */ 
+// This method is used to add characters at the end of a string
+    
     /*To find the capacity of string builder ater increasing its capacity -->
      new capacity = max [   (old capacity + 1)*2   ,  (old no of elements+ no. of elements added now)   ]*/
-     public static void main(String agrs[]){
-        StringBuilder sb = new StringBuilder(); // default capacity = 16
-        StringBuilder sb1 = new StringBuilder("java");  // capacity = 20
-
+    
         sb.append("asfdjhgftghbvgyhgyu");
         System.out.println(sb.capacity()); 
         System.out.println("*** .capacity() method ends here ***");
+    
+    
+    
    
-  }
+  
 }
