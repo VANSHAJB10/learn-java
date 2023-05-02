@@ -51,6 +51,8 @@ else{
     System.out.println(name); 
     
 /* .length()  method in Strings*/
+    
+    
     // paranthesis  is necessary because its a method  
     
     /* Methods of String -- 
@@ -62,6 +64,9 @@ else{
      * lastindexOf() with and without parameter passing
      * StringBuilder
      * */
+
+/* .split() method */    
+    
     String stationary  ="pen,pencil,eraser,book,notebook,scale";
     String [] st =stationary.split(",");         //split method using 1 parameter // here ' , ' is deliminator 
 
@@ -71,6 +76,17 @@ else{
         System.out.println(x);
         }
     }
+    
+    
+/* .compareTo()  method */
+  // used to comapre the strings Lexographically (alphabetical order)
+ 
+str.compareTo(str2);     /*   
+                            output        --           meaning
+                              = 0         --      string 1 = string 2
+                              > 0         --      string 1 > string 2
+                              < 0         --      string 1 < string 2
+                         */
     
     
     
