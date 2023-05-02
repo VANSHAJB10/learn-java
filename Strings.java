@@ -111,6 +111,22 @@ System.out.println{largest};
 
     
     
+// Java String are IMMUTABLE
+/*
+
+*Interning* -  When a reference variable points to a String (in the intern pool (OR String pool) ) and a new reference variable is declared with exactly same value of String then 
+                this new reference variable points to the same String as the first refernece variable is pointing.
+               No new String of the same value is created. This is called interning. 
+               
+               Example -
+                String s1 = "Tony";
+                String s2 = "Tony";     
+                here, both s1 and s2 are storing the address of the same object i.e. Tony.
+                
+But in case of --  ' String s3 = new String ("Tony"); '
+A new Object 'Tony' is created instead of Interning. And s3 stores a different object address than s2 & s1. 
+               
+*/
     
     
     
