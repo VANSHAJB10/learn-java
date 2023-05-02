@@ -148,6 +148,19 @@ A new Object 'Tony' is created instead of Interning. And s3 stores a different o
       
 
 
+/* .toString() */
+  // converts any Object to String.    
+  /*  Only Objects are converted to String 
+          Example - int a = 10;
+                    a.toString();   --> will not cnvert it to string , Rather
+                    
+                   Integer a = 10; ;
+                   a.toString();   --> willbe converted it to string as it is an object of Integer class 
+  */
+
+
+
+
 */    
     /*StringBuilder*/
     /*To find the capacity of string builder ater increasing its capacity -->
