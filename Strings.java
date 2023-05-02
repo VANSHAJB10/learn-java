@@ -128,8 +128,27 @@ A new Object 'Tony' is created instead of Interning. And s3 stores a different o
                
 */
     
+// Cons of String Immutability -->
+/*    
+    Algorithm -- 
+      Stirng str = "Tony";
+      for (char a to z){
+        str += char;
+      }
     
-    
+    * ANALYSIS *
+    first str points to 'Tony'
+    as soon as the lloop starts -- 
+      Tony is copied and 'a' is added at its end making it 'Tonya'
+        then 'Toya' is copied and 'b' is added at its end making it 'Tonyab'
+          then 'Toyb' is copied and 'c' is added at its end making it 'Tonyabc'
+                                                                        and so on ...
+                                                                      
+--> each time copying the string of length 'm'  and repeating the process 'n' times (here n= 26)    --> make the Time Complexity = O(n*m) ~=  O(n*n) which is quadratic hence slow.
+      
+
+
+*/    
     /*StringBuilder*/
     /*To find the capacity of string builder ater increasing its capacity -->
      new capacity = max [   (old capacity + 1)*2   ,  (old no of elements+ no. of elements added now)   ]*/
