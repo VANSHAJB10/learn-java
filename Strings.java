@@ -104,8 +104,14 @@ for (int i = 0; i < fruits.length(); i++){
 System.out.println{largest};  
 }
 
+//      * ANALYSIS *
+/* Time complexity of .comapreTo()  will be   ""  O(x*n)  ""
+    if x is length of largest string an dn is number of strings in the array                      */
 
 
+    
+    
+    
     
     
     /*StringBuilder*/
