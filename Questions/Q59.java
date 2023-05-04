@@ -14,9 +14,7 @@ public class LargestOf3Numbers {
     else if (b>c && b>a){
       System.out.println(b + "is largest");
     }
-    else (c>a && c>b){
+    else 
       System.out.println(c + "is largest");
-    }
-    
   }
 }
