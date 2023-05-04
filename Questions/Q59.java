@@ -16,5 +16,13 @@ public class LargestOf3Numbers {
     }
     else 
       System.out.println(c + "is largest");
+    
+    
+    // Approach 2
+    int semilargest (a>b ? a : b); // largest of a and b
+     largest = c>semilargest ? c : semilargest; 
+    
+    
   }
 }
+
