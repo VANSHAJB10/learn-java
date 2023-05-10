@@ -12,3 +12,13 @@ Logging
 Security
 
 *** *** *** *** *** *** *** ***
+
+
+*** calling the application ***
+
+public static void main(String[] args)  
+{    
+  SpringApplication.run(ClassName.class, args);    
+} 
+
+*** *** *** *** *** *** *** ***
