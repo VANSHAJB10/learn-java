@@ -22,3 +22,10 @@ public static void main(String[] args)
 } 
 
 *** *** *** *** *** *** *** ***
+
+
+*** Application events ***
+
+* It provides the facility to enable admin-related features for the application.
+    can be enabled by using-->  'spring.application.admin.enabled property'
+* It uses YAML files to externalize configuration so that we can work with the same application in different environments.
