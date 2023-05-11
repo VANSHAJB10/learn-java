@@ -76,3 +76,33 @@ To make a string left justified and within a field of 15 characters.
 String str = "Hello, world!";
 String leftJustified = String.format("%-15s", str);
 System.out.println(leftJustified);
+
+
+
+
+// **  AVOID THESE!!  **
+1. Unisng Mutable and immutable objects
+    There’s a careful balance to strike when choosing between creating a mutable or immutable object.
+    A mutable object can be modified after creation, whereas an immutable object cannot. 
+    While immutable objects offer benefits such as safety, simplicity, and reduced memory, they build up garbage collection when requiring a separate object for each distinct value.
+        
+        Mutable:
+
+        When changes are made to the object, no new object is formed.
+
+        Methods are provided to change the content of an object.
+
+        Both getter and setter methods are present.
+
+        Common examples include StringBuffer , StringBuilder, and java.util.date.
+            
+            
+        Immutable:
+
+    A new object is formed when an existing object is changed.
+
+    No methods are provided to change the content of an object.
+
+    Only getter methods are present. There are no setter methods.
+
+    Common examples include all legacy classes, wrapper classes, and String classes.
