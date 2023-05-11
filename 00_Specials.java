@@ -106,3 +106,24 @@ System.out.println(leftJustified);
     Only getter methods are present. There are no setter methods.
 
     Common examples include all legacy classes, wrapper classes, and String classes.
+        
+        
+        
+ 2. Confusing  = , == , .equals()
+     = is used for assignment. == is a referential equality comparison, meaning it checks whether both objects point to the same memory location. 
+     .equals() evaluates whether the two objects are equal in value.
+       
+     'As a rule of thumb, stick to .equals() when comparing objects, especially strings.'
+         
+ String a = "hello";
+ String b = "world";
+ 
+ if ( (a+b).equals("helloworld") )
+ {
+    System.out.println("hellowworld");
+ }
+
+
+
+3.
+
