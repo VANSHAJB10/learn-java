@@ -138,3 +138,11 @@ In general, ArrayLists are better suited when the application demands storing an
 
     Implements a List interface and therefore acts as a list.
 
+        
+    LinkedList
+
+    Uses a doubly linked list to store elements.
+
+    Takes less time to manipulate a LinkedList compared to an ArrayList, since in a doubly linked list, there are no shifting memory bits.
+
+    Implements both the List interface and the Deque interface and therefore can act as both a list and deque.
