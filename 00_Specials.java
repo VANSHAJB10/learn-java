@@ -125,5 +125,16 @@ System.out.println(leftJustified);
 
 
 
-3.
+3. Using ArrayList instead of LinkedList
+It’s easy to default to using ArrayLists, since they’re more common and familiar. However, LinkedLists perform significantly better than ArrayLists in many use cases.
+In general, ArrayLists are better suited when the application demands storing and access of data. LinkedLists are better when the application demands manipulation of the stored data.
+    
+    
+    ArrayList:
+
+    Uses a dynamic array to store elements.
+
+    Takes more time to manipulate the ArrayList due to the internal implementation of shifting memory bits.
+
+    Implements a List interface and therefore acts as a list.
 
