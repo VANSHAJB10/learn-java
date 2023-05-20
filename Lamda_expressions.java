@@ -52,9 +52,12 @@ class Test
 1. Lambda Expression with Zero parameter:
 () -> System.out.println("Zero parameter lambda");
 
-2. Lambda Expression with Single parameter
+2. Lambda Expression with Single parameter:
 (p) -> System.out.println("One parameter: " + p);
 
 IMPORTANT!! --> It's not mandatory to use parentheses if the type of that variable can be inferred from the context
+
+3. Lambda Expression with Multiple parameters:
+(p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
 
 */
