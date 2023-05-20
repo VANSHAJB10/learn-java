@@ -10,6 +10,8 @@
   -- A function that can be created without belonging to any class.
   -- A lambda expression can be passed as if it was an object and executed on demand.
   
+** Syntax of Lambda expression:
+   lambda operator -> body  
   
 **  
 // Java program to demonstrate lambda expressions to implement a user defined functional interface.
