@@ -55,6 +55,6 @@ class Test
 2. Lambda Expression with Single parameter
 (p) -> System.out.println("One parameter: " + p);
 
-Itot mandatory to use parentheses if the type of that variable can be inferred from the context
+IMPORTANT!! --> It's not mandatory to use parentheses if the type of that variable can be inferred from the context
 
 */
