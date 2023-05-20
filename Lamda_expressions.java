@@ -42,4 +42,19 @@ class Test
 	}
 }
 
+
+** Number of parameters of Lambda expression:
+  Lambda expression can be of three type based on number of parameters it is taking:
+-- Zero Parameter
+-- Single Parameter
+-- Multiple Parameters
+
+1. Lambda Expression with Zero parameter:
+() -> System.out.println("Zero parameter lambda");
+
+2. Lambda Expression with Single parameter
+(p) -> System.out.println("One parameter: " + p);
+
+Itot mandatory to use parentheses if the type of that variable can be inferred from the context
+
 */
