@@ -53,10 +53,11 @@ class Main implements interface1_name, interface2_name{
  *ANSWER -->   YES , becoz... 
 
 
-* All variables in interface are implicitly final and static
-* Interfaces specifies what class must do but not how it does
-* All variables in interface are implicitly final and static
-* 
+* Interfaces specifies what class must do but not how it does. Interface contains the only declaration of the method.  
+* By default, interface contains abstract methods
+* Concrete classes must implement all methods in an interface. 
+* All variables in interface are implicitly final and static.   ***Important*** They are usually written in capital letters.
+* Through interface multiple inheritance is possible.
 
 
 
