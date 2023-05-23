@@ -10,3 +10,22 @@
 * to call the function of a class:    '.'  operator is used
 * Syntax to call function of class
     ob.func1();
+
+
+/* Access modifiers */
+* keyword that tell which var can access which piece od code/data
+* There are 4 types of access specifiers --
+                                            Private
+                                            Default
+                                            Protected
+                                            Public
+/* getter an dsetter */
+* getter methods are be used to access the private variables of a class outside the class
+* this keyword is used to refer the calling object: more percisely 'current object'
+
+
+
+/* 4 Pillars of OOPS */
+/* 1.Encapsulation */
+* Wrapping up of data and methods under a single entity.
+* It implements 'data hiding'
