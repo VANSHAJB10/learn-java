@@ -59,6 +59,12 @@ class Main implements interface1_name, interface2_name{
 * All variables in interface are implicitly final and static.   ***Important*** They are usually written in capital letters.
 * Through interface multiple inheritance is possible.
 
+* When a constructor is defined for an interface --> it gives Compilation failure
+* Constructor is not provided by interface as objects cannot be instantiated.
+
+* when we access the same variable defined in two interfaces implemented by the same class. The interfaceName.variableName needs to be defined. The JVM needs to distinctly know which value of variable it needs to use. 
+
+
 
 
  /**/ ************* Functional Interface ***************/**/
