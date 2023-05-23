@@ -53,6 +53,11 @@ class Main implements interface1_name, interface2_name{
  *ANSWER -->   YES , becoz... 
 
 
+* All variables in interface are implicitly final and static
+* Interfaces specifies what class must do but not how it does
+* All variables in interface are implicitly final and static
+* 
+
 
 
  /**/ ************* Functional Interface ***************/**/
