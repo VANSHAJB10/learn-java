@@ -29,3 +29,17 @@
 /* 1.Encapsulation */
 * Wrapping up of data and methods under a single entity.
 * It implements 'data hiding'
+
+    
+/* 2.Constructor */
+* Constructor overloading - when program itself decides which cnstructor to call among may available constructors
+* Constructor overloading is example of Polymorphism
+
+    /* Copy Constructor */
+    * Copying values of 1 constructor into other constructor
+    * Student s2 = Student(s1);
+            This creates a new constructor- s2 whic is a copy of s1.
+            Student (Student s1){
+            this.name = s1.name;
+            this.rollno= s1.rollno;    
+            } 
