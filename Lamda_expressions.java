@@ -3,6 +3,8 @@
 ** Lamda expression = Lambda Function, which is short block of code that take parameters as input and returns a resultant value.
 ** Lambda Expressions are recently included in Java SE 8. 
 
+** Lambda expression enables us to pass functionality as an argument to another method
+** Return type of lambda expression is 'Function'
 
 ** Lambda Expressions implement the only abstract function and therefore implement functional interfaces.
 ** Its functionalities are--
@@ -59,5 +61,11 @@ IMPORTANT!! --> It's not mandatory to use parentheses if the type of that variab
 
 3. Lambda Expression with Multiple parameters:
 (p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
+
+
+
+* BooleanSupplier function interface represents supplier of Boolean-valued results.
+
+
 
 */
