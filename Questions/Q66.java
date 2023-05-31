@@ -23,6 +23,8 @@ public class DNAConversion {
         Scanner scanner = new Scanner(System.in);
         int T = scanner.nextInt(); // number of test cases
         
+
+// METHOD 1
         while (T-- > 0) {
             int N = scanner.nextInt(); // length of the original string
             String A = scanner.next(); // binary string A
@@ -50,5 +52,16 @@ public class DNAConversion {
             
             System.out.println(result);
         }
+
+
+// METHOD 2
+
+
+
+
+
+
+
+
     }
 }
