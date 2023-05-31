@@ -77,7 +77,9 @@ String str = "Hello, world!";
 String leftJustified = String.format("%-15s", str);
 System.out.println(leftJustified);
 
-
+/* 7 */
+sc.nextString() takes input as string and not as integer while next() takes the input in integer and string both.
+So ot take integer input from user, either use sc.next() or sc.nextInt().
 
 
 // **  AVOID THESE!!  **
