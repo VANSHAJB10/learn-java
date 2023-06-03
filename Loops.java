@@ -77,3 +77,18 @@ for (int i = 0; i < 6; i++) {
 }
 
 // skips the fifth iteration, because the value of i then is 4 and it satisfies the condition mentioned in the if statement
+
+
+/* for each loop    -->    for(Stirng i : Names) */
+// It is used exclusively to loop through elements in an array, known as for each loop.
+
+class Main
+{
+	public static void main (String[] args)
+	{
+		int[] num = {10, 20, 30, 40, 50, 60, 70, 80};
+		for (int i : num){
+		    System.out.println(i);
+		}
+	}
+}
