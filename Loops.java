@@ -62,3 +62,18 @@ class Main
         }
 	}
 }
+
+/* continue statement */
+/*   
+The continue statement breaks one iteration, when executed, and continues with the next iteration in the loop. i.e., 
+continue simply skips the remaining codeblock execution for an iteration.
+*/
+
+for (int i = 0; i < 6; i++) {
+  if (i == 4) {
+    continue;
+  }
+  System.out.println(i);
+}
+
+// skips the fifth iteration, because the value of i then is 4 and it satisfies the condition mentioned in the if statement
