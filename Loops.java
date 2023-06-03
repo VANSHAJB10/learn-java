@@ -49,7 +49,7 @@ public class halfpyramid {
 /* break statements */
 // A break statement can also be used to jump out of a loop.
 
-
+// code that prints a series of numbers from 0 to 15 but it should stop if the number reaches 13.
 class Main
 {
 	public static void main (String[] args)
