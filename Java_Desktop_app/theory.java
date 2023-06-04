@@ -45,6 +45,92 @@ p.add(new JButton("2"));
 
 
 
+/* Program to create a translucent frame and control its translucency with the help of a JSlider */
+// Java program to create a
+// translucent frame and control
+// its translucency with
+// the help of a JSlider
+import javax.swing.event.*;
+import java.awt.*;
+import javax.swing.*;
+class solveit extends JFrame implements ChangeListener {
+
+	// frame
+	static JFrame f;
+
+	// slider
+	static JSlider b;
+
+	// label
+	static JLabel l;
+
+	// main class
+	public static void main(String[] args)
+	{
+		// create a new frame
+		f = new JFrame("translucent window");
+
+		// create a object
+		solveit s = new solveit();
+
+		// create label
+		l = new JLabel();
+
+		// create a panel
+		JPanel p = new JPanel();
+
+		// create a slider
+		b = new JSlider(0, 100, 100);
+
+		// paint the ticks and tracks
+		b.setPaintTrack(true);
+		b.setPaintTicks(true);
+		b.setPaintLabels(true);
+
+		// set spacing
+		b.setMajorTickSpacing(20);
+		b.setMinorTickSpacing(5);
+
+		// setChangeListener
+		b.addChangeListener(s);
+
+		// add slider to panel
+		p.add(b);
+		p.add(l);
+
+		f.add(p);
+
+		// set the text of label
+		l.setText("Opacity value is =" + b.getValue());
+
+		// set the size of frame
+		f.setSize(300, 300);
+
+		// decorated frame's opacity cant be set
+		// so make the frame undecorated
+		f.setUndecorated(true);
+
+		// set opacity value for the window
+		f.setOpacity(b.getValue() * 0.01f);
+
+		f.setLocation(500, 300);
+
+		f.show();
+	}
+
+	// if opacity value is changed
+	public void stateChanged(ChangeEvent e)
+	{
+		l.setText("opacity value is =" + b.getValue());
+
+		// set opacity value for the window
+		f.setOpacity(b.getValue() * 0.01f);
+	}
+}
+
+
+
+
 /*Tic Tac Toe*/
 Panel will be havng grid layout of 3 x 3 
 
