@@ -1,3 +1,17 @@
+Programming platforms typically have hidden or private test files and test cases. What are these?
+
+Private test files check for the following
+Test your code for logic
+Test your code for corner cases / edge cases
+Test your code for handling scale -> does your program solve within time and space constraints?
+
+What do these private test files do?
+Your code is run on each test case within the private test file
+This generates your actual output
+This is judged against the expected output.
+If the actual output and expected output match, then your code is correct
+
+
 /* Q1 -->  Will the following statement give any error in Java?
 int $ = 24 */
 Ans --->  No, the statement will not give any error.
