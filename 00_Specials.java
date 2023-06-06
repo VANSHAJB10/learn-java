@@ -163,8 +163,17 @@ In general, ArrayLists are better suited when the application demands storing an
 
     Implements both the List interface and the Deque interface and therefore can act as both a list and deque.
 
-/* !! 1  !!*/
+/* !! 1  !! */
 Java.lang is a superclass of all classes.
 The object is the root class for all the java classes and we don’t need to extend it. 
 Every other java classes fall back under the object. 
 All the different non-primitive types including arrays are inherited directly or indirectly from this class.
+
+/* !! 2 - What are finally and finalize in Java? !! */
+
+Finally block is used with a try-catch block to put the code that you always want to get executed even the execution is thrown by the try-catch block.  
+Finally is just used for releasing the resources which were created by the try block.
+
+Finalize() is a special method in Object class that we can override in our classes. 
+Finalize() is called by the Garbage collector to collect the garbage value when the object is getting it. 
+This method is generally overridden to release the system resources when garbage value is collected from the object.
