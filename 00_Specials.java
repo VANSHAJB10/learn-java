@@ -162,3 +162,9 @@ In general, ArrayLists are better suited when the application demands storing an
     Takes less time to manipulate a LinkedList compared to an ArrayList, since in a doubly linked list, there are no shifting memory bits.
 
     Implements both the List interface and the Deque interface and therefore can act as both a list and deque.
+
+/* !! 1  !!*/
+Java.lang is a superclass of all classes.
+The object is the root class for all the java classes and we don’t need to extend it. 
+Every other java classes fall back under the object. 
+All the different non-primitive types including arrays are inherited directly or indirectly from this class.
