@@ -2,6 +2,8 @@
 * Inheritance is widely used in java applications, 
   For example extending the Exception class to create an application-specific Exception class that contains more information such as error codes. 
   eg. NullPointerException.
+       ** NullPointerException is a runtime exception, so we don’t need to catch it in the program.
+          NullPointerException is raised in an application when we are trying to do some operation on null where an object is required.
 
  * Every class in java implicitly extends java.lang.Object class. So, Object class is at the top level of inheritance hierarchy in java.
 
