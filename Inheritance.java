@@ -1,4 +1,10 @@
-/* multiple inheritance is not allowed in java.
+/* INHERITANCE
+* Inheritance is widely used in java applications, 
+  For example extending the Exception class to create an application-specific Exception class that contains more information such as error codes. 
+  eg. NullPointerException.
+
+
+ * Multiple inheritance is not allowed in java.
  * it is resolved at runtime that method of which class will be called in case there are same method name in parent as well as child class
  
  *Important*
