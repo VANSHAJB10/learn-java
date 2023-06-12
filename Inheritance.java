@@ -3,6 +3,8 @@
   For example extending the Exception class to create an application-specific Exception class that contains more information such as error codes. 
   eg. NullPointerException.
 
+ * Every class in java implicitly extends java.lang.Object class. So, Object class is at the top level of inheritance hierarchy in java.
+
 
  * Multiple inheritance is not allowed in java.
  * it is resolved at runtime that method of which class will be called in case there are same method name in parent as well as child class
