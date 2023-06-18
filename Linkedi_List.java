@@ -1,5 +1,13 @@
 public class Linked_List {    
-    //Represent a node of the singly linked list    
+    //Represent a node of the singly linked list  
+/*
+addNode() will add a new node to the list:
+Create a new node.
+It first checks, whether the head is equal to null which means the list is empty.
+If the list is empty, both head and tail will point to the newly added node.
+If the list is not empty, the new node will be added to end of the list such that tail's next will point to the newly added node. 
+This new node will become the new tail of the list.
+*/  
     class Node{    
         int data;    
         Node next;    
