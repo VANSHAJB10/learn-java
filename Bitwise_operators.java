@@ -24,6 +24,9 @@ public class Bitwise_operators{
     System.out.println(a >> 1);
     System.out.println(a >> 2); // 2 times right shift
 
-    
   }
 }
+
+// A bitwise operator is a symbol/notation that performs a specified operation on standalone bits, 'taken one at a time'.
+// It can be used with various integer types – char, int, long, short, and byte.
+
