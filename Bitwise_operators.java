@@ -6,9 +6,9 @@ public class Bitwise_operators{
           1. OR                |
           2. AND               &
           3. Exclusive OR      ^
-          4. Complement        ~
-          5. Left shift        <<       written as  a << b   ;  b is the number of time Left shift is being implemented  ;  (it is eauivalent to ==>  a* 2(pow b) )
-          6. Right Shift       >>       written as  a >> b   ;  b is the number of time Right shift is being implemented  ;  (it is eauivalent to ==>  a / 2(pow b) )
+          4. Complement        ~        Compiler will give 2’s complement of that number
+          5. Left shift        <<       written as  a << b   ;  b is the number of times Left shift is being implemented  ;  (it is equivalent to ==>  a* 2(pow b) )
+          6. Right Shift       >>       written as  a >> b   ;  b is the number of times Right shift is being implemented  ;  (it is equivalent to ==>  a / 2(pow b) )
         */  
 
     System.out.println(q | b);
@@ -17,7 +17,8 @@ public class Bitwise_operators{
 
     System.out.println(~a);
     System.out.println(~b);
-
+                                                      // Auxiliary space:O(1) 
+                                                      // Time complexity:O(1) 
     System.out.println(a << 1);
     System.out.println(a << 2);
 
