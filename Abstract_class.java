@@ -59,3 +59,11 @@ Abstract classes can also have final, nonfinal, static and nonstatic variables, 
 
 Implementation is done similarly in Java. For example, using the keyword implements will make a Java interface, while the keyword extends makes an abstract class.
 */
+
+/* Abstractions vs encapsulation
+ The implementation and state of each object are privately held inside a defined class. Other objects don't have access to this class or the authority to make changes; they're only able to call a list of public functions or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption, while also making code easier to maintain and reuse.
+
+Encapsulation is done by declaring all the variables in a class as private while writing methods declared as public to set and retrieve variable values.
+
+While abstraction is the process of hiding unwanted data, encapsulation is the process of hiding data with the goal of protecting that information. While abstraction is achieved using abstract classes or interfaces, encapsulation is implemented using an access modifier.
+*/
