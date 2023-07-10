@@ -50,3 +50,12 @@ A factory method is a method that returns the instance of the class.
 * It can have constructors and static methods also.
 * It can have final methods which will force the subclass not to change the body of the method.
 */
+
+/*
+Abstract classes vs. interfaces
+An interface is another similar way to create an abstraction. Like abstract classes, interfaces can't be instantiated. But unlike abstract classes, an interface method can be set as abstract.
+
+Abstract classes can also have final, nonfinal, static and nonstatic variables, whereas an interface has only static and final variables. Additionally, abstract methods can define public, protected and private concrete methods, while interfaces have all fields as automatically public, static and final. Interfaces, however, support multiple inheritances where abstract classes don't.
+
+Implementation is done similarly in Java. For example, using the keyword implements will make a Java interface, while the keyword extends makes an abstract class.
+*/
