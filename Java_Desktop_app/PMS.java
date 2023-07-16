@@ -453,3 +453,84 @@ public class n {
             }
         }
     }
+
+
+
+
+//RV 
+
+import java.util.*;
+import java.time.*;
+class Receipt
+{
+    String name;
+    String v_no;
+    String slot;
+    String type;
+    LocalTime entry_time;
+    LocalDate date;
+    Receipt(String n, String v, String s, char t)
+    {
+        name = n;
+        v_no= v;
+        slot=s;
+        type= String.valueOf(t);
+         date=LocalDate.now();
+         entry_time=LocalTime.now();
+    }
+}
+public class Parking
+{
+    Scanner sc = new Scanner(System.in);
+    int [][] two_wheelers=new int [3][10];//3 rows 10 columns 2-d array created
+    int [][] four_wheelers=new int [5][10];
+
+    private void populate() //for dummy vehicles are present already
+    {
+        // 0 represents empty parking slots
+        for(int i=0;i < two_wheelers.length;i++)//for getting number of rows
+            for(int j=0;j < two_wheelers[i].length;j++)//for getting number of columns
+            {
+                int a = (int)  (Math.random() * 10);
+                if (a > 3) two_wheelers[i][j] = 1;
+            }
+        for(int i=0;i < four_wheelers.length;i++)//for getting number of rows
+            for(int j=0;j < four_wheelers[i].length;j++)//for getting number of columns
+            {
+                int a = (int)  (Math.random() * 10);
+                if (a > 5) four_wheelers[i][j] = 1;
+            }
+    }
+
+    void entry()
+    {
+        System.out.println("\n Enter the vehicle number:\t");
+        String v_no = sc.nextLine();
+        System.out.println("\n Enter the owner's name:\t");
+        String name = sc.nextLine();
+        System.out.println("\n Enter T for 2-Wheeler OR F for 4-Wheeler :\t");
+        char type = sc.next().charAt(0);
+        String slot= null;
+        if (type=='T')
+            slot = getAvailableSlot(two_wheelers);//getAvailableSlot function will traverse the 2-d array and look for the first zero occurring in the array
+        else if(type=='F')
+            slot =  getAvailableSlot(four_wheelers);
+
+        Receipt r=new Receipt(name,v_no,slot,type);
+    }
+    String getAvailableSlot(int arr[][])
+    {
+        int i=0;
+        int j =0;
+        for(  i=0;i<arr.length;i++);
+        for( j=0;j<arr[i].length;j++);
+        {
+            if(arr[i][j]==0)
+            {
+                return " "+(char)(i+65)+" "+(j+1);
+            }
+        }
+        return null;
+    }
+
+}
